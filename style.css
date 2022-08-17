@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.container{
+    width: 1200px;
+    height: 930px;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo{
+    position: absolute;
+    margin-bottom: 600px;
+    font-size: 20pt;
+}
+
+ul{
+    width: 400px;
+    height: 500px;
+    list-style: none;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+
+li{
+    height: 170px;
+    display: block;
+    margin: 20px 0 20px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 13pt;
+}
+
+textarea{
+    width: 200px;
+    height: 55px;
+    resize: none;
+    text-align: center;
+    font-size: 11pt;
+    cursor: default;
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    background: none;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+#muda p {
+    font-size: 12pt;
+}

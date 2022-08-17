@@ -1,12 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="katas1.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Katas 01</title>
 </head>
 <body>
-    <script src="katas1.js"></script>
+    <div class="container">
+        <div class="titulo">
+            <h1>Clique nos botões para ver os resultados...</h1>
+        </div>
+        <ul>
+            <li>
+                <p>Números de 1 a 20</p>
+                <textarea  id="UmaVinte" readonly></textarea>
+                <div><button id="button" onclick="oneThroughTwenty()">VER</button></div>
+            </li>
+            <li>
+                <p>Números pares de 1 a 20</p>
+                <textarea id="pares_ate_vinte" readonly></textarea>
+                <div><button id="button" onclick="evensToTwenty()">VER</button></div>
+            </li>
+            <li>
+                <p>Números impares de 1 a 20</p>
+                <textarea id="impares_ate_vinte" readonly></textarea>
+                <div><button id="button" onclick="oddsToTwenty()">VER</button></div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>Números multiplos de 5 de 5 até 100</p>
+                <textarea id="multiplos_de_5" readonly></textarea>
+                <div><button id="button" onclick="multiplesOfFive()">VER</button></div>
+            </li>
+            <li>
+                <p>Números que são quadrados perfeitos</p>
+                <textarea id="perfeitos" readonly></textarea>
+                <div><button id="button" onclick="squareNumbers()">VER</button></div>
+            </li>
+            <li>
+                <p>Números de 20 a 1</p>
+                <textarea id="VinteaUm" readonly></textarea>
+                <div><button id="button" onclick="countingBackwards()">VER</button></div>
+            </li>
+            <li>
+                <p>Números pares entre 20 a 1</p>
+                <textarea id="pares_ate_20_contrario" readonly></textarea>
+                <div><button id="button" onclick="evenNumbersBackwards()">VER</button></div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p>Números impares entre 20 a 1</p>
+                <textarea id="impares_ate_20_contrario" readonly></textarea>
+                <div><button id="button" onclick="oddNumbersBackwards()">VER</button></div>
+            </li>
+            <li>
+                <p>Números multiplos de 5 de 100 a 5</p>
+                <textarea id="multiplos_de_5_contrario" readonly></textarea>
+                <div><button id="button" onclick="multiplesOfFiveBackwards()">VER</button></div>
+            </li>
+            <li id="muda">
+                <p>Números que são quadrados perfeitos de trás pra frente</p>
+                <textarea id="perfeitos_contrario" readonly></textarea>
+                <div><button id="button" onclick="squareNumbersBackwards()">VER</button></div>
+            </li>  
+        </ul>
+    </div>
 </body>
 </html>

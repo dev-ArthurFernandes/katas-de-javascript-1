@@ -1,94 +1,170 @@
 function oneThroughTwenty() {
     
-   /* Your code goes below
-   Write a for or a while loop
-   return the result*/
-    
+  let lista = []
+
+  for(let contador = 1; contador <= 20; contador++){
+    lista.push(contador)
+  }
+  
+  document.getElementById("UmaVinte").value = lista.join('-')
 }
 
-//call function oneThroughTwenty
+// oneThroughTwenty()
 
 function evensToTwenty() {
     
-   /* Your code goes below
-   Write a for or a while loop
-   return the result */
-  
+  let contador = 1
+
+  let lista_de_pares = []
+
+  while(contador <= 20){
+    
+    if (contador % 2 == 0){
+      lista_de_pares.push(contador)
+    }
+    contador += 1
+  }
+
+  document.getElementById("pares_ate_vinte").value = lista_de_pares.join('-')
 }
 
-//call function evensToTwenty
+// evensToTwenty()
 
 function oddsToTwenty() {
     
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let contador = 1
+
+  let lista_de_impares = []
+
+  while(contador <= 20){
+    
+    if (contador % 2 == 1){
+      lista_de_impares.push(contador)
+    }
+    contador += 1
+  }
+
+  document.getElementById("impares_ate_vinte").value = lista_de_impares.join('-')
    
 }
 
-//call function oddsToTwenty
+// oddsToTwenty()
 
 function multiplesOfFive() {
     
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let contador = 1
 
+  let multiplos = []
+
+  while(contador <= 20){
+    multiplos.push(contador * 5)
+    contador += 1
+  } 
+
+  document.getElementById("multiplos_de_5").value = multiplos.join('-')
 }
 
-//call function multiplesOfFive
+// multiplesOfFive()
 
 function squareNumbers() {
     
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
-    
+ let contador = 1
+  
+  perfeitos = []
+
+  while(contador <=10){
+    perfeitos.push(contador * contador)
+    contador += 1
+  }
+
+  document.getElementById("perfeitos").value = perfeitos.join('-')
 }
 
-//call function squareNumbers
+// squareNumbers()
 
 function countingBackwards() {
     
-  /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let lista = []
+  
+  for(let contador = 20; contador >= 1; contador -=1){
+    lista.push(contador)
+  }
+
+  document.getElementById("VinteaUm").value = lista.join('-')
 }
 
-//call function countingBackwards
+// countingBackwards()
 
 function evenNumbersBackwards() {
     
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let contador = 20
+
+  let lista_de_pares = []
+
+  while(contador >= 1){
+    
+    if (contador % 2 == 0){
+      lista_de_pares.push(contador)
+    }
+    contador -= 1 
+  }
+  
+  document.getElementById("pares_ate_20_contrario").value = lista_de_pares.join('-')
+ 
 }
 
-//call function evenNumbersBackwards
+// evenNumbersBackwards()
 
 function oddNumbersBackwards() {
     
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let contador = 20
+
+  let lista_de_impares = []
+
+  while(contador >= 1){
+    
+    if (contador % 2 == 1){
+      lista_de_impares.push(contador)
+    }
+    contador -= 1
+  }
+  
+  document.getElementById("impares_ate_20_contrario").value = lista_de_impares.join('-')
+
 }
 
-//call function oddNumbersBackwards
+// oddNumbersBackwards()
 
 function multiplesOfFiveBackwards() {
     
- /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  let contador = 20
+
+  let multiplos = []
+
+  while(contador >= 1){
+    multiplos.push(contador * 5)
+    contador -= 1
+  } 
+
+  document.getElementById("multiplos_de_5_contrario").value = multiplos.join('-')
+
 }
 
-//call function multiplesOfFiveBackwards
+// multiplesOfFiveBackwards()
 
 function squareNumbersBackwards() {
-    
-   /* Your code goes below
-  Write a for or a while loop
-  return the result */
+  
+  let contador = 10
+  
+  perfeitos = []
+
+  while(contador >=1){
+    perfeitos.push(contador * contador)
+    contador -= 1
+  }
+
+  document.getElementById("perfeitos_contrario").value = perfeitos.join('-')
+   
 }
 
-//call function squareNumbersBackwards
+// squareNumbersBackwards()
